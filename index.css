@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+  font-family: sans-serif;
+}
+
 #variables {
   display: flex;
   flex-direction: row;
@@ -28,11 +32,15 @@ td {
   width: 25%;
 }
 
-
 #visualization .healthy span::after {
   content: "😀"
 }
 
 #visualization .sick span::after {
   content: "🤢"
+}
+
+#about {
+  padding-left: 20px;
+  width: 600px;
 }

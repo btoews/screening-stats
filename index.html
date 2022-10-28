@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
+    <h1>Screening Test Statistics</h1>
     <div id="variables">
       <fieldset id="test-result" class="ternary-variable">
         <label>Test Result:</label>
@@ -73,6 +74,19 @@
         </tr>
       </tbody>
     </table>
+    <hr />
+    <div id="about">
+      <strong>Sensitivity</strong> is the probability of testing positive if you are sick. The probability of a false-negative is 100% minus the sensitivity.
+      <br /><br />
+      <strong>Specificity</strong> is the probability of testing negative if you are healthy. The probability of a false-positive is 100% minus the specificity.
+      <br /><br />
+      The probabaility of you being sick given a test result depends on how prevelant the condition is overall (the base rate). This is confusing at first, but it helps to think in terms of extremes:
+      <ul>
+        <li>If we know for a fact that 100% of people are sick, then you have a 100% probability of being sick regardless of what any test says.</li>
+        <li>If we know for a fact that 0% of people are sick, then you have aa 0% probability of being sick regardless of what any test says.</li>
+      </ul>
+    </div>
+    <hr />
     <a href="https://github.com/btoews/screening-test-stats">code</a>
   </body>
 </html>
