@@ -175,7 +175,7 @@ function run() {
   const testResult = new TernaryVariable('test-result');
 
   const tp = new Result(truePositive, baseRate, sensitivity);
-  const fn = new Result(truePositive, baseRate, sensitivity);
+  const fn = new Result(falseNegative, baseRate, sensitivity);
   const fp = new Result(falsePositive, baseRate, specificity);
   const tn = new Result(trueNegative, baseRate, specificity);
 
