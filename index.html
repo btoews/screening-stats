@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <script type="application/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <fieldset id="specificity" class="percentage-variable">
+      <label>Specificity:</label>
+      <input class="slider" type="range" min="0" max="100" value="99.99" />
+      <input class="numeric" type="text" value="99.99" />
+    </fieldset>
+
+    <fieldset id="sensitivity" class="percentage-variable">
+      <label>Sensitivity:</label>
+      <input class="slider" type="range" min="0" max="100" value="80" />
+      <input class="numeric" type="text" value="80" />
+    </fieldset>
+
+    <fieldset id="base-rate" class="percentage-variable">
+      <label>Base Rate:</label>
+      <input class="slider" type="range" min="0" max="100" value="5" />
+      <input class="numeric" type="text" value="5" />
+    </fieldset>
+
+    <fieldset id="test-result" class="ternary-variable">
+      <label>Test Result:</label>
+      <div>
+        <input type="radio" name="test-result" value="positive" checked />
+        <label>Positive</label>
+      </div>
+      <div>
+        <input type="radio" name="test-result" value="negative" />
+        <label>Negative</label>
+      </div>
+      <div>
+        <input type="radio" name="test-result" value="unknown" />
+        <label>N/A</label>
+      </div>
+    </fieldset>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Probability of condition given test result</td>
+          <td id="condition-probability">50.00</td>
+        </tr>
+        <tr>
+          <td>Positive Predictive Value</td>
+          <td id="ppv">50.00</td>
+        </tr>
+        <tr>
+          <td>Negative Predictive Value</td>
+          <td id="npv">50.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table id="visualization">
+      <thead>
+        <tr>
+          <td colspan="2">Negative Test</td>
+          <td colspan="2">Positive Test</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="viz-fn" class="sick"></td>
+          <td id="viz-tn" class="healthy"></td>
+          <td id="viz-tp" class="sick"></td>
+          <td id="viz-fp" class="healthy"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+table {
+  margin: 20px 0px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#visualization {
+  width: 1000px;
+}
+
+#visualization td {
+  width: 25%;
+}
+
+
+#visualization .healthy span::after {
+  content: "😀"
+}
+
+#visualization .sick span::after {
+  content: "🤢"
+}
