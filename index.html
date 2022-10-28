@@ -4,39 +4,41 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <fieldset id="specificity" class="percentage-variable">
-      <label>Specificity:</label>
-      <input class="slider" type="range" min="0" max="100" value="99.99" />
-      <input class="numeric" type="text" value="99.99" />
-    </fieldset>
+    <div id="variables">
+      <fieldset id="test-result" class="ternary-variable">
+        <label>Test Result:</label>
+        <div>
+          <input type="radio" name="test-result" value="positive" checked />
+          <label>Positive</label>
+        </div>
+        <div>
+          <input type="radio" name="test-result" value="negative" />
+          <label>Negative</label>
+        </div>
+        <div>
+          <input type="radio" name="test-result" value="unknown" />
+          <label>N/A</label>
+        </div>
+      </fieldset>
 
-    <fieldset id="sensitivity" class="percentage-variable">
-      <label>Sensitivity:</label>
-      <input class="slider" type="range" min="0" max="100" value="80" />
-      <input class="numeric" type="text" value="80" />
-    </fieldset>
+      <fieldset id="specificity" class="percentage-variable">
+        <label>Specificity:</label>
+        <input class="slider" type="range" min="0" max="100" value="99.99" />
+        <input class="numeric" type="text" value="99.99" />%
+      </fieldset>
 
-    <fieldset id="base-rate" class="percentage-variable">
-      <label>Base Rate:</label>
-      <input class="slider" type="range" min="0" max="100" value="5" />
-      <input class="numeric" type="text" value="5" />
-    </fieldset>
+      <fieldset id="sensitivity" class="percentage-variable">
+        <label>Sensitivity:</label>
+        <input class="slider" type="range" min="0" max="100" value="80" />
+        <input class="numeric" type="text" value="80" />%
+      </fieldset>
 
-    <fieldset id="test-result" class="ternary-variable">
-      <label>Test Result:</label>
-      <div>
-        <input type="radio" name="test-result" value="positive" checked />
-        <label>Positive</label>
-      </div>
-      <div>
-        <input type="radio" name="test-result" value="negative" />
-        <label>Negative</label>
-      </div>
-      <div>
-        <input type="radio" name="test-result" value="unknown" />
-        <label>N/A</label>
-      </div>
-    </fieldset>
+      <fieldset id="base-rate" class="percentage-variable">
+        <label>Base Rate:</label>
+        <input class="slider" type="range" min="0" max="100" value="5" />
+        <input class="numeric" type="text" value="5" />%
+      </fieldset>
+    </div>
 
     <table>
       <tbody>

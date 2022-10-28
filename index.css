@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+#variables {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#variables input[type=text] {
+  width: 3.5em;
+}
+
 table {
   margin: 20px 0px;
 }
